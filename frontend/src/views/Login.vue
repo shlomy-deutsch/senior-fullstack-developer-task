@@ -20,7 +20,7 @@ const store = useStore()
 const router = useRouter()
 const username = ref("")
 const isLoading = computed(() => store.getters.isLoading)
-const loginError = computed(() => store.getters.loginError)
+const loginError = computed(() => store.getters.isError)
 
 const handleLogin = async () => {
   try {
