@@ -1,6 +1,7 @@
 import { MigrationInterface, QueryRunner } from "typeorm";
 
-export class AddDeletedUser1670000000002 implements MigrationInterface {
+export class AddDeletedUser1767709293743 implements MigrationInterface {
+
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
       INSERT INTO users (username, roles, status)

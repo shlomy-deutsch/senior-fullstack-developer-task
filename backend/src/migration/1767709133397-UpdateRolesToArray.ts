@@ -1,7 +1,8 @@
 import { MigrationInterface, QueryRunner } from "typeorm";
 
-export class UpdateUserRolesToArray1670000000000 implements MigrationInterface {
-  public async up(queryRunner: QueryRunner): Promise<void> {
+export class UpdateRolesToArray1767709133397 implements MigrationInterface {
+
+public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
       UPDATE users
       SET roles = 

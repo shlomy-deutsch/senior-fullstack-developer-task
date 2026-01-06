@@ -1,7 +1,8 @@
 import { MigrationInterface, QueryRunner } from "typeorm";
 
-export class UpdateUserStatusEnum1670000000001 implements MigrationInterface {
-  public async up(queryRunner: QueryRunner): Promise<void> {
+export class UpdateUserStatusEnum1767709248023 implements MigrationInterface {
+
+public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
       UPDATE users
       SET status = 
